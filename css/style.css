@@ -74,12 +74,11 @@ li{
 	border-radius: 20px;
 	text-decoration: none;
 	transition: .5s;
-	
 }
 
 .social-media a:hover {
-	border-color: #eaeaea;
-	background: #eaeaea;
+	border-color: #206CB3;
+	background: #206CB3;
 }
 
 .social-media a i {
@@ -94,7 +93,6 @@ li{
 	justify-content: space-between;
 	align-items: center;
 	padding: 50px 8% 0;
-	overflow: hidden;
 }
 
 .home-content{
@@ -141,13 +139,10 @@ li{
 
 .home .home-img {
 	position: absolute ;
-	width: 70rem;
-	height: 70rem;
-	align-items: right;
-	right: -20%;
-	background: #206CB3;
-	transform: rotate(45deg);
-	overflow: hidden;
+	width: 10rem;
+	height: 10rem;
+	left: 50rem;
+	top: 10rem;
 	z-index: -1;
 }
 
