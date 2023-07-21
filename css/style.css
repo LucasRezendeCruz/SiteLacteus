@@ -282,6 +282,30 @@ li{
 	}
 }
 
+@keyframes slideLinha1 {
+	0%{
+		transform: translateX(300px);
+		opacity: 0;
+	}
+
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideLinha2 {
+	0%{
+		transform: translateX(-300px);
+		opacity: 0;
+	}
+
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
 /*TEXTO PARA PÁGINA INICIAL MÓDULOS*/
 .home-modules{
 	text-align: center;
@@ -369,5 +393,12 @@ li{
 	text-align: justify;
 }
 
+.home-modules .linha1{
+	animation: slideLinha1 1s ease forwards;
+	animation-delay: calc(.2s);
+}
 
-
+.home-modules .linha2{
+	animation: slideLinha2 1s ease forwards;
+	animation-delay: calc(.2s);
+}
