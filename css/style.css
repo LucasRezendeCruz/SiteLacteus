@@ -22,6 +22,10 @@ header {
 
 body {
 	background: #eaeaea;
+	
+}
+
+.overflow {
 	overflow: hidden;
 }
 
@@ -82,7 +86,7 @@ li{
 }
 
 .social-media a i {
-	font-size: 24px;
+	
 	color: black;
 }
 /*CORPO DA PÁGINA INICIAL*/
@@ -298,12 +302,38 @@ li{
 	font-size: 60px;
 	line-height: 1.2;
 	color: #222;
+	margin-bottom: 75px;
 }
 
-.home-content-cards {
-
+/*Customização do Card*/
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
+.card {
+	border-radius: 25px;
+	box-shadow: 7px 7px 13px 0 rgba(50, 50, 0, .22);
+	padding: 20px;
+	margin: 20px;
+	width: 350px;
+	height: 175px;
+	border: 2px solid;
+	border-color: #206CB3;
+	background: transparent;
+	color:#206CB3;
+	align-content: stretch;
+}
+.card h2 {
+	margin-bottom: 20px;
+}
+
+.card i {
+	margin-top: 20px;
+	font-size: 50px;
+	
+}
 
 
 /*TEXTO PARA PÁGINAS DOS MÓDULOS*/
@@ -338,4 +368,6 @@ li{
 	margin: 15px 0 30px;
 	text-align: justify;
 }
+
+
 
