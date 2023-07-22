@@ -8,7 +8,6 @@
 }
 
 header {
-	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -18,6 +17,10 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100;
+}
+
+header .fixed{
+	position: fixed;
 }
 
 body {
@@ -86,7 +89,7 @@ li{
 }
 
 .social-media a i {
-	
+	font-size: 24px;
 	color: black;
 }
 /*CORPO DA PÁGINA INICIAL*/
@@ -306,10 +309,22 @@ li{
 	}
 }
 
+@keyframes slideLinha3 {
+	0%{
+		transform: translateY(300px);
+		opacity: 0;
+	}
+
+	100%{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
 /*TEXTO PARA PÁGINA INICIAL MÓDULOS*/
 .home-modules{
 	text-align: center;
-	margin-top: 175px;
+
 }
 
 .home-content-modules{
@@ -347,16 +362,15 @@ li{
 	border-color: #206CB3;
 	background: transparent;
 	color:#206CB3;
-	align-content: stretch;
+	align-items: center;
+	justify-content: center;
 }
 .card h2 {
 	margin-bottom: 20px;
 }
 
 .card i {
-	margin-top: 20px;
 	font-size: 50px;
-	
 }
 
 
@@ -400,5 +414,10 @@ li{
 
 .home-modules .linha2{
 	animation: slideLinha2 1s ease forwards;
+	animation-delay: calc(.2s);
+}
+
+.home-modules .linha3{
+	animation: slideLinha3 1s ease forwards;
 	animation-delay: calc(.2s);
 }
