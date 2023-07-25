@@ -25,20 +25,19 @@ header .fixed{
 
 body {
 	background: #eaeaea;
-	
 }
+
+
 
 .overflow {
 	overflow: hidden;
 }
 
-
 li{
 	list-style: none;
 }
 
-
-/*LOGO LACTEUS*/
+/*HEADER*/
 .logo {
 	opacity: 0;
 	animation: slideLogo 1s ease forwards;
@@ -94,13 +93,14 @@ li{
 	font-size: 24px;
 	color: black;
 }
+
 /*CORPO DA PÁGINA INICIAL*/
 .home{
 	width: 100%;
 	height: 100vh;
 	display: flex;
 	justify-content: space-between;
-	margin-top: 10rem;
+	margin-top: 8rem;
 	padding: 50px 8% 0;
 }
 
@@ -217,6 +217,175 @@ li{
 	margin: 0 20px;
 }
 
+/*TEXTO PARA PÁGINA INICIAL MÓDULOS*/
+.home-modules{
+	text-align: center;
+	margin-bottom: 10rem;
+}
+
+.home-content-modules{
+	max-width: 100%;
+	animation: slideModule 2s ease forwards;	
+}
+
+.home-content-modules a{
+	opacity: 0;
+	animation: slideModule 2s ease forwards;
+	animation-delay: calc(.2s * var(--i));
+}
+
+.home-content-modules h1 {
+	font-size: 80px;
+	line-height: 1.2;
+	color: #206CB3;
+	margin-bottom: 75px;
+}
+
+.home-modules .linha1{
+	animation: slideLinha1 1s ease forwards;
+	animation-delay: calc(.2s);
+}
+
+.home-modules .linha2{
+	animation: slideLinha2 1s ease forwards;
+	animation-delay: calc(.2s);
+}
+
+.home-modules .linha3{
+	animation: slideLinha3 1s ease forwards;
+	animation-delay: calc(.2s);
+}
+
+/*Customização do Card*/
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+}
+
+.card {
+	border-radius: 25px;
+	box-shadow: 7px 7px 13px 0 rgba(50, 50, 0, .22);
+	padding: 20px;
+	margin: 20px;
+	width: 350px;
+	height: 175px;
+	border: 2px solid;
+	border-color: #206CB3;
+	background: transparent;
+	color:#206CB3;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.card:hover {
+	cursor: pointer;
+	color: #eaeaea;
+	background: #206CB3;
+	
+}
+
+.card h2 {
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+
+.card i {
+	margin-top: 40px;
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+.row div {
+	display: block;
+	flex-direction: column;
+	justify-content: center;
+	align-content: space-between;
+	align-items: center;
+}
+
+
+/*TEXTO PARA PÁGINAS DOS MÓDULOS*/
+
+section.azul{
+	padding-bottom: 130px;
+}
+section.branco{
+	padding-bottom: 130px;
+}
+
+.azul {
+	background: #206CB3;
+	max-width: 100%;
+}
+
+.azul h1{
+	color: #eaeaea;
+	text-align: right;
+}
+
+.azul .home-content-text p {
+	margin-left: 10rem;
+	max-width: 100%;
+}
+
+.branco h1 {
+	color: #000;
+}
+
+.branco .home-content-text p {
+	margin-right: 10rem;
+	max-width: 100%;
+}
+
+.home-text{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 50px 8% 0;
+}
+
+.home-content-text{
+	max-width: 100%;
+}
+
+.home-content-text h1 {
+	font-size: 80px;
+	line-height: 1.2;
+}
+
+.home-content-text p {
+	margin: 15px 0 30px;
+	font-size: 25px;
+	text-align: justify;
+	
+}
+
+/*RESPONSIVE*/
+@media(max-width: 1210px){
+	.navigation,.social-media{
+		display: none;
+	}
+
+	.btn-menu{
+		display: block;
+	}
+
+	.dropdown_menu{
+		display: block;
+	}
+
+	.home-img img {
+		display: none;
+	}
+
+	.home-content img{
+		display: block;
+	}
+}
+
 /*KEYFRAMES */
 
 @keyframes slideNav {
@@ -312,150 +481,5 @@ li{
 	100%{
 		transform: translateX(0);
 		opacity: 1;
-	}
-}
-
-/*TEXTO PARA PÁGINA INICIAL MÓDULOS*/
-.home-modules{
-	text-align: center;
-	
-}
-
-.home-content-modules{
-	max-width: 100%;
-	animation: slideModule 2s ease forwards;	
-}
-
-.home-content-modules a{
-	opacity: 0;
-	animation: slideModule 2s ease forwards;
-	animation-delay: calc(.2s * var(--i));
-}
-
-.home-content-modules h1 {
-	font-size: 80px;
-	line-height: 1.2;
-	color: #206CB3;
-	margin-bottom: 75px;
-}
-
-/*Customização do Card*/
-.row {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	opacity: 0;
-}
-
-.card {
-	border-radius: 25px;
-	box-shadow: 7px 7px 13px 0 rgba(50, 50, 0, .22);
-	padding: 20px;
-	margin: 20px;
-	width: 350px;
-	height: 175px;
-	border: 2px solid;
-	border-color: #206CB3;
-	background: transparent;
-	color:#206CB3;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
-}
-
-.card:hover {
-	cursor: pointer;
-	color: #eaeaea;
-	background: #206CB3;
-	
-}
-
-.card h2 {
-	margin-bottom: 20px;
-	text-decoration: none;
-}
-
-.card i {
-	margin-top: 40px;
-	font-size: 50px;
-	margin-bottom: 30px;
-}
-
-.row div {
-	display: block;
-	flex-direction: column;
-	justify-content: center;
-	align-content: space-between;
-	align-items: center;
-}
-
-/*TEXTO PARA PÁGINAS DOS MÓDULOS*/
-
-.home-text{
-	width: 100%;
-	margin-top: 10rem;
-	display: flex;
-	align-items: center;
-	padding: 50px 8% 0;
-}
-
-.home-content-text{
-	max-width: 100%;
-	opacity: 0;
-	animation: slideLogo 1s ease forwards;
-	animation-delay: calc(.2s);
-}
-
-.home-content-text h1 {
-	font-size: 60px;
-	line-height: 1.2;
-}
-
-.home-content-text h3 {
-	font-size: 35px;
-	color: #206CB3;
-}
-
-.home-content-text p {
-	font-size: 16px;
-	margin: 15px 0 30px;
-	text-align: justify;
-}
-
-.home-modules .linha1{
-	animation: slideLinha1 1s ease forwards;
-	animation-delay: calc(.2s);
-}
-
-.home-modules .linha2{
-	animation: slideLinha2 1s ease forwards;
-	animation-delay: calc(.2s);
-}
-
-.home-modules .linha3{
-	animation: slideLinha3 1s ease forwards;
-	animation-delay: calc(.2s);
-}
-
-/*RESPONSIVE*/
-@media(max-width: 1210px){
-	.navigation,.social-media{
-		display: none;
-	}
-
-	.btn-menu{
-		display: block;
-	}
-
-	.dropdown_menu{
-		display: block;
-	}
-
-	.home-img img {
-		display: none;
-	}
-
-	.home-content img{
-		display: block;
 	}
 }
