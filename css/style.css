@@ -27,8 +27,6 @@ body {
 	background: #eaeaea;
 }
 
-
-
 .overflow {
 	overflow: hidden;
 }
@@ -221,6 +219,7 @@ li{
 .home-modules{
 	text-align: center;
 	margin-bottom: 10rem;
+	
 }
 
 .home-content-modules{
@@ -269,7 +268,7 @@ li{
 	box-shadow: 7px 7px 13px 0 rgba(50, 50, 0, .22);
 	padding: 20px;
 	margin: 20px;
-	width: 350px;
+	width: 300px;
 	height: 175px;
 	border: 2px solid;
 	border-color: #206CB3;
@@ -278,6 +277,11 @@ li{
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
+}
+
+.card h2{
+	text-decoration: none;
+	
 }
 
 .card:hover {
@@ -311,8 +315,11 @@ li{
 
 section.azul{
 	padding-bottom: 130px;
+	
 }
 section.branco{
+	background: url('../img/_import_6157eb707674b9.47786893_FPpreview.mp4');
+	background-size: cover;
 	padding-bottom: 130px;
 }
 
@@ -324,6 +331,10 @@ section.branco{
 .azul h1{
 	color: #eaeaea;
 	text-align: right;
+}
+.azul p{
+	color: #eaeaea;
+	
 }
 
 .azul .home-content-text p {
