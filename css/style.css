@@ -478,14 +478,7 @@ section.branco{
 		display: block;
 	}
 
-	.home .home-img {
-		left: 0;
-		top: -5rem;
-	}
-
-	.home-content img{
-		display: block;
-	}
+	
 }
 
 /* Add this at the end of your CSS code */
@@ -614,48 +607,6 @@ section.branco{
 		line-height: 1.2;
 	}
 
-	
-	
-
-	.home{
-	width: 100vw;
-	height: 100vh;
-	display: block;
-	justify-content: center;
-	padding: 8vh 8vw 8vh;
-}
-
-.home-content{
-	max-width: 45rem;
-	opacity: 0;
-	animation: slideLogo 1s ease forwards;
-	animation-delay: calc(.2s);
-}
-
-.home-content h1 {
-	font-size: 4.5rem;
-	line-height: 1.2;
-}
-
-.home-content h3 {
-	font-size: 2rem;
-	color: #206CB3;
-}
-
-.home-content p {
-	font-size: 1.3rem;
-	margin: 15px 0 30px;
-	text-align: justify;
-}
-
-.home .home-img {
-	position: relative ;
-	left: 45rem;
-	top: -30rem;
-	z-index: -1;
-	transition: .3s;
-	animation: slideSocial 1s ease forwards;
-}
 
 
 } 
