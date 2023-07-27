@@ -3,74 +3,118 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Home | Lacteus : Gestão para Laticínios</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 		<link rel="icon" href="https://lacteus.com.br/v5/wp-content/uploads/2021/08/b1-icone.ico" type="image/x-icon" sizes="32x32"> 
 		<link rel="icon" href="https://lacteus.com.br/v5/wp-content/uploads/2021/08/b1-icone.ico" type="image/x-icon" sizes="16x16"> 
 		<script src="https://kit.fontawesome.com/739c4c3091.js" crossorigin="anonymous"></script>
-	</head>	
-	<body class="overflow">
-		<header class="header fixed">
-			<a href="index.html" class="logo"><img alt="..." src="img/logo-h-100.png" width="262" height="50"></a>
-			<!--Nav com as opções-->
-			<nav class="navigation">
-				<a style="--i:1;" href="http://portal.lacteus.net.br/" target="_blank">Portal do Cliente</a>
-				<a style="--i:2;" href="modulos.html">Módulos</a>
-				<a style="--i:3;" href="aplicativos.html">Aplicativos</a>
-				<a style="--i:4;" href="sobre.html">Sobre</a>
-			</nav>
-			<!--Nav com as opções de redes sociais-->
-			<div class="social-media">
-				<a style="--i:4;" target="_blank" href="https://www.youtube.com/lacteusbrasil" ><i class='bx bxl-youtube' ></i></a>
-				<a style="--i:3;" target="_blank" href="https://api.whatsapp.com/send?phone=553237213875"><i class='bx bxl-whatsapp' ></i></a>
-				<a style="--i:2;" target="_blank" href="https://www.instagram.com/lacteusbrasil/"><i class='bx bxl-instagram' ></i></a>
-				<a style="--i:1;" target="_blank" href="https://br.linkedin.com/company/lacteusbrasil"><i class='bx bxl-linkedin'></i></a>
-			</div>
-			<div class="btn-menu">
-				<i class='bx bx-menu'></i>
-			</div>
-			<!--DROPDOWN-->
-			<div class="dropdown_menu ">
-				<ul>
-				<li><a href="http://portal.lacteus.net.br/" target="_blank">Portal do Cliente</a></li>
-				<li><a href="modulos.html">Módulos</a></li>
-				<li><a href="aplicativos.html">Aplicativos</a></li>
-				<li><a href="solucoes.html">Soluções</a></li>
-				<li><a href="sobre.html">Sobre</a></li>
-				<li><a href="https://api.whatsapp.com/send?phone=553237213875" class="btn">Entre em Contato</a></li>
-				</ul>
-			</div>
+	</head>
+<body>
+	<header class="header fixed">
+		<a href="index.html" class="logo"><img alt="..." src="img/logo-h-100.png" width="262" height="50"></a>
+		<!--Nav com as opções-->
+		<nav class="navigation">
+			<a style="--i:1;" href="http://portal.lacteus.net.br/" target="_blank">Portal do Cliente</a>
+			<a style="--i:2;" href="modulos.html">Módulos</a>
+			<a style="--i:3;" href="aplicativos.html">Aplicativos</a>
+			<a style="--i:4;" href="sobre.html">Sobre</a>
+		</nav>
+		<!--Nav com as opções de redes sociais-->
+		<div class="social-media">
+			<a style="--i:4;" target="_blank" href="https://www.youtube.com/lacteusbrasil" ><i class='bx bxl-youtube' ></i></a>
+			<a style="--i:3;" target="_blank" href="https://api.whatsapp.com/send?phone=553237213875"><i class='bx bxl-whatsapp' ></i></a>
+			<a style="--i:2;" target="_blank" href="https://www.instagram.com/lacteusbrasil/"><i class='bx bxl-instagram' ></i></a>
+			<a style="--i:1;" target="_blank" href="https://br.linkedin.com/company/lacteusbrasil"><i class='bx bxl-linkedin'></i></a>
+		</div>
+		<div class="btn-menu">
+			<i class='bx bx-menu'></i>
+		</div>
+		<!--Nav com as opções para telas menores-->
+		<div class="dropdown_menu ">
+			<ul>
+			<li><a href="http://portal.lacteus.net.br/" target="_blank">Portal do Cliente</a></li>
+			<li><a href="modulos.html">Módulos</a></li>
+			<li><a href="aplicativos.html">Aplicativos</a></li>
+			<li><a href="solucoes.html">Soluções</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<li><a href="https://api.whatsapp.com/send?phone=553237213875" class="btn">Entre em Contato</a></li>
+			</ul>
+		</div>
 
-		</header>
-		<!--Corpo da página-->
-		<section class="home-modules">
-			<div class="home-content-modules">
-				<a style="--i:1;"><h1>APLICATIVOS</h1></a>
-				
-			</div>
-			<!--Linha 1-->
-			<div class="row linha1">
+	</header>
+
+	<section class="home-modules margim">
+		<div class="home-content-modules">
+			<h1>APLICATIVOS</h1>	
+		</div>
+		
+		<!--Linha 1-->
+		<div class="row linha1">
+			<a href="#cap">
 				<div class="card">
 					<i class="fa-solid fa-droplet fa-2xl"></i>
 					<h2>Coleta</h2>
 				</div>
+			</a>
+			<a href="#com">
 				<div class="card">
-					<i class="fa-solid fa-handshake fa-2xl"></i>
-					<h2>Força de Vendas</h2>
+					<i class="fa-solid fa-handshake fa-2xl" ></i>
+					<h2>Força de Venda</h2>
 				</div>
+			</a>
+			<a href="#fin">
 				<div class="card">
-					<i class="fa-solid fa-truck-fast fa-2xl"></i>
+					<i class="fa-solid fa-truck-fast fa-2xl" ></i>
 					<h2>Entregador</h2>
 				</div>
-			</div>
-			
-			
-		</section>
+			</a>
+		</div>
+	</section>
+	<!--TEXTO CAPTAÇÃO-->
+	<section class="home-text azul">
+		<div class="home-content-text" id="cap">
+			<h1>Captação de Leite</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis veniam error repellat architecto molestias cupiditate, saepe similique, iste suscipit sed excepturi est dolores ea magni! Nobis aut officiis laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat possimus tempora maiores tempore? Reprehenderit minus eum pariatur eos neque iste odit corrupti alias placeat, consequuntur atque, sequi aspernatur quisquam!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam iste aperiam eaque explicabo animi doloribus, vero nemo possimus at quia, incidunt eligendi autem rerum quos nostrum deserunt sit? Voluptates?
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dignissimos explicabo tenetur incidunt, in ad debitis doloribus ipsum ut minima animi quas fugit perferendis necessitatibus unde deserunt totam voluptate voluptatibus?
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore saepe debitis deleniti quia cum magnam sint? Labore, reiciendis? Fuga eum sapiente neque labore. Dolor distinctio at possimus voluptatibus veritatis eaque.
+			<p>
+		</div>
+		
+	</section>
 
-	<footer class="footer">
+	<!--TEXTO COMERCIAL-->
+	<section class="home-text branco">
+		<div class="home-content-text" id="com">
+			<h1>Comercial</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis veniam error repellat architecto molestias cupiditate, saepe similique, iste suscipit sed excepturi est dolores ea magni! Nobis aut officiis laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat possimus tempora maiores tempore? Reprehenderit minus eum pariatur eos neque iste odit corrupti alias placeat, consequuntur atque, sequi aspernatur quisquam!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam iste aperiam eaque explicabo animi doloribus, vero nemo possimus at quia, incidunt eligendi autem rerum quos nostrum deserunt sit? Voluptates?
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dignissimos explicabo tenetur incidunt, in ad debitis doloribus ipsum ut minima animi quas fugit perferendis necessitatibus unde deserunt totam voluptate voluptatibus?
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore saepe debitis deleniti quia cum magnam sint? Labore, reiciendis? Fuga eum sapiente neque labore. Dolor distinctio at possimus voluptatibus veritatis eaque.
+			<p>
+		</div>
+		
+	</section>
 
-	</footer>
-	</body>
+	<!--TEXTO FINANCEIRO-->
+	<section class="home-text azul">
+		<div class="home-content-text" id="fin">
+			<h1>Financeiro</h1>
+			<p>				
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis veniam error repellat architecto molestias cupiditate, saepe similique, iste suscipit sed excepturi est dolores ea magni! Nobis aut officiis laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat possimus tempora maiores tempore? Reprehenderit minus eum pariatur eos neque iste odit corrupti alias placeat, consequuntur atque, sequi aspernatur quisquam!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam iste aperiam eaque explicabo animi doloribus, vero nemo possimus at quia, incidunt eligendi autem rerum quos nostrum deserunt sit? Voluptates?
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dignissimos explicabo tenetur incidunt, in ad debitis doloribus ipsum ut minima animi quas fugit perferendis necessitatibus unde deserunt totam voluptate voluptatibus?
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore saepe debitis deleniti quia cum magnam sint? Labore, reiciendis? Fuga eum sapiente neque labore. Dolor distinctio at possimus voluptatibus veritatis eaque.
+			<p>
+		</div>
+	</section>
+
+</body>
 </html>
