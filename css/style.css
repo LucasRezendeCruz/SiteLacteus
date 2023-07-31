@@ -95,10 +95,9 @@ a {
 }
 
 /*CORPO DA PÁGINA INICIAL*/
+
 .home{
-	width: 100vw;
-	height: 100vh;
-	display: block;
+	
 	justify-content: center;
 	padding: 8vh 8vw 8vh;
 }
@@ -134,6 +133,8 @@ a {
 	transition: .3s;
 	animation: slideSocial 1s ease forwards;
 }
+
+
 
 /*ANIMAÇÃO DOS BOTÕES*/
 .btn {
@@ -277,10 +278,6 @@ a {
 	background: transparent;
 	color:#206CB3;
 	justify-content: space-evenly;
-	text-decoration: none;
-}
-
-.card h2{
 	text-decoration: none;
 }
 
@@ -464,28 +461,10 @@ section.branco{
 	}
 }
 
-/*RESPONSIVE*/
-@media(max-width: 1210px){
-	.navigation,.social-media{
-		display: none;
-	}
 
-	.btn-menu{
-		display: block;
-	}
-
-	.dropdown_menu{
-		display: block;
-	}
-
-	
-}
 
 /* Add this at the end of your CSS code */
-@media screen and (max-width: 1024px) {
-	/* Styles for screens with a maximum width of 768px (e.g., mobile devices) */
-  
-	/* Adjust the header and navigation for mobile */
+@media screen and (max-width: 1210px) {
 	header {
 	  padding: 15px 8%;
 	}
@@ -505,6 +484,11 @@ section.branco{
   
 	.btn-menu {
 	  display: block;
+	}
+
+	.home .home-img {
+		left: 0rem;
+		top: -5rem;
 	}
   
 	.dropdown_menu {
@@ -535,14 +519,6 @@ section.branco{
 	  margin: 10px;
 	}
 
-	.home-modules{
-		margin: 0 2rem 10rem;
-	}
-
-	.home-content-modules h1{
-		font-size: 50px;
-	}
-  	
 	.card {
 		border-radius: 25px;
 		box-shadow: 7px 7px 13px 0 rgba(50, 50, 0, .22);
@@ -551,35 +527,17 @@ section.branco{
 		width: 300px;
 		height: 175px;
 		border: 2px solid;
-		border-color: #206CB3;
-		background: transparent;
-		color:#206CB3;
 		justify-content: space-evenly;
-		text-decoration: none;
 	}
 
-	.card h2{
-		text-decoration: none;
+	.home-modules{
+		margin: 0 2rem 10rem;
 	}
 
-	.card:hover {
-		cursor: pointer;
-		color: #eaeaea;
-		background: #206CB3;
-	}
-
-	.card h2 {
-		margin-bottom: 20px;
-		text-decoration: none;
-	}
-
-	.card i {
-		margin-top: 40px;
+	.home-content-modules h1{
 		font-size: 50px;
-		margin-bottom: 30px;
 	}
-	
-	/* Adjust the text sections for mobile */
+  	
 	.home-content-text p {
 		margin-left: 0;
 		margin-right: 0;
@@ -607,6 +565,5 @@ section.branco{
 		line-height: 1.2;
 	}
 
-
-
-} 
+	
+}
