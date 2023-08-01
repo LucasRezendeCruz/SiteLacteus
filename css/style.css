@@ -39,6 +39,7 @@ a {
 	text-decoration: none;
 }
 
+
 /*HEADER*/
 .logo {
 	opacity: 0;
@@ -94,46 +95,6 @@ a {
 	color: black;
 }
 
-/*CORPO DA PÁGINA INICIAL*/
-
-.home{
-	
-	justify-content: center;
-	padding: 8vh 8vw 8vh;
-}
-
-.home-content{
-	max-width: 45rem;
-	opacity: 0;
-	animation: slideLogo 1s ease forwards;
-	animation-delay: calc(.2s);
-}
-
-.home-content h1 {
-	font-size: 4.5rem;
-	line-height: 1.2;
-}
-
-.home-content h3 {
-	font-size: 2rem;
-	color: #206CB3;
-}
-
-.home-content p {
-	font-size: 1.3rem;
-	margin: 15px 0 30px;
-	text-align: justify;
-}
-
-.home .home-img {
-	position: relative ;
-	left: 45rem;
-	top: -30rem;
-	z-index: -1;
-	transition: .3s;
-	animation: slideSocial 1s ease forwards;
-}
-
 
 
 /*ANIMAÇÃO DOS BOTÕES*/
@@ -157,13 +118,15 @@ a {
 	color: #206CB3;
 }
 
+
+/*DROPDOWN MENU*/
+
 .btn-menu {
 	font-size: 2rem;
 	cursor: pointer;
 	display: none;
 }
 
-/*DROPDOWN MENU*/
 .dropdown_menu{
 	display: none;
 	position: absolute;
@@ -173,6 +136,7 @@ a {
 	height: 0;
 	background: rgba(139, 141, 143, 0.1);
 	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
 	border-radius: 10px;
 	overflow: hidden;
 	transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -180,7 +144,8 @@ a {
 }
 
 .dropdown_menu.open{
-	height: 350px;
+	height: 340px;
+	width: 300px;
 }
 
 .dropdown_menu a:hover,
@@ -209,6 +174,50 @@ a {
 	font-weight: 500;
 	margin: 0 20px;
 }
+.dropdown_menu a.social{
+	font-size: 1.7rem;
+}
+
+
+/*TEXTO PARA PÁGINA INICIAL */
+.home-index{
+	padding: 8vh 8vw 8vh;
+	justify-content: space-between;
+	opacity: 0;
+	animation: slideLogo 1s ease forwards;
+	animation-delay: calc(.2s);
+}
+
+.home-content-index{
+	max-width: 50rem;
+}
+
+.home-content-index h1 {
+	font-size: 4.5rem;
+	line-height: 1.2;
+}
+
+.home-content-index h3 {
+	font-size: 2rem;
+	color: #206CB3;
+}
+
+.home-content-index p {
+	font-size: 1.3rem;
+	margin: 15px 0 30px;
+	text-align: justify;
+}
+.home-img{
+	position: relative ;
+	left: 45rem;
+	top: -30rem;
+	z-index: -1;
+	transition: .3s;
+	animation: slideSocial 1s ease forwards;
+}
+
+
+
 
 /*TEXTO PARA PÁGINA INICIAL MÓDULOS*/
 .home-modules{
@@ -254,6 +263,27 @@ a {
 .home-modules .linha3{
 	animation: slideLinha3 1s ease forwards;
 	animation-delay: calc(.2s);
+}
+
+/*TEXTO PARA PÁGINA SOBRE */
+.home-sobre{
+	padding: 8vh 8vw 8vh;
+	justify-content: center;
+	opacity: 0;
+	animation: slideLogo 1s ease forwards;
+	animation-delay: calc(.2s);
+}
+
+.home-content-sobre h1 {
+	font-size: 6rem;
+	line-height: 1.2;
+	color: #206CB3;
+}
+
+.home-content-sobre p {
+	font-size: 1.4rem;
+	margin: 10px 0 10px;
+	text-align: justify;
 }
 
 /*Customização do Card*/
@@ -477,9 +507,9 @@ section.branco{
 	.navigation {
 	  display: none;
 	}
-  
+
 	.social-media {
-	  display: none;
+		display: none;
 	}
   
 	.btn-menu {
@@ -490,13 +520,17 @@ section.branco{
 		left: 0rem;
 		top: -5rem;
 	}
+
+	.home-index{
+		padding: 0 8vw 8vh;
+	}
   
 	.dropdown_menu {
 	  display: flex;
 	  flex-direction: column;
 	  justify-content: flex-start;
 	  align-items: center;
-	  width: 100%;
+	  width: 300px;
 	  top: 70px;
 	  right: 0;
 	}
@@ -565,5 +599,21 @@ section.branco{
 		line-height: 1.2;
 	}
 
-	
+	.home-content-index{
+		max-width: 100vw;
+	}
+
+	.home-img{
+		display: none;
+	}
+
+	.overflow {
+		overflow: visible;
+	}
+
+	.home-content-sobre h1 {
+		font-size: 65px;
+		margin-bottom: 2rem;
+	}
 }
+
